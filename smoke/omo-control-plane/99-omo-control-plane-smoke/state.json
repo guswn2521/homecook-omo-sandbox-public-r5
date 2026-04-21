@@ -3,15 +3,16 @@
   "work_item_id": "99-omo-control-plane-smoke",
   "attempts": {
     "1": 3,
-    "2": 2
+    "2": 3,
+    "3": 1
   },
   "review_loops": {
     "backend": {
-      "requested_changes": 0,
-      "code_retries": 0,
+      "requested_changes": 1,
+      "code_retries": 1,
       "approvals": 0,
-      "feedback_seen_by_codex": false,
-      "last_feedback": null
+      "feedback_seen_by_codex": true,
+      "last_feedback": "Backend smoke review loop request 1: tighten the API contract and rerun the backend stage."
     },
     "frontend": {
       "requested_changes": 0,
@@ -73,6 +74,24 @@
       "artifact_dir": "/Users/shj/2025/2026/homecook1/.artifacts/omo-control-plane-smoke-replay-r5/stage-2-attempt-2",
       "review_feedback_seen": false,
       "updated_at": "2026-04-21T13:12:10.974Z"
+    },
+    {
+      "stage": 3,
+      "attempt": 1,
+      "actor": "claude",
+      "outcome": "request_changes",
+      "artifact_dir": "/Users/shj/2025/2026/homecook1/.artifacts/omo-control-plane-smoke-replay-r5/stage-3-attempt-1",
+      "review_feedback_seen": false,
+      "updated_at": "2026-04-21T13:12:43.038Z"
+    },
+    {
+      "stage": 2,
+      "attempt": 3,
+      "actor": "codex",
+      "outcome": "approve",
+      "artifact_dir": "/Users/shj/2025/2026/homecook1/.artifacts/omo-control-plane-smoke-replay-r5/stage-2-attempt-3",
+      "review_feedback_seen": true,
+      "updated_at": "2026-04-21T13:12:45.619Z"
     }
   ]
 }
